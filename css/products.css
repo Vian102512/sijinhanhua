@@ -1,0 +1,162 @@
+#right{
+	margin-left:300px;
+} 
+/*当前位置*/
+body .top{
+	padding:10px;
+}
+#products{
+	margin:auto;
+	width:1250px;
+}
+/*1.热销单品推荐*/
+div .hot{
+	width:280px;
+	height:1200px;
+	float:left;
+	/*border:1px solid purple;*/
+	
+}
+
+div .hot>p{
+	width:280px;
+	line-height:40px;
+	background:linear-gradient(to bottom,#fff,#EEEEEE);
+	padding-left:10px;
+	border:1px solid #ddd;
+	color:#555555;
+	box-sizing:border-box;
+}
+div .hot>ul img{
+	width:105px;
+	height:105px;
+	
+}
+div .hot>ul p{
+	position:absolute;
+	top:40px;
+	left:150px;
+}
+div .hot>ul li{
+	width:280px;
+	height:120px;
+	border:1px solid #ddd;
+	padding:5px;
+	margin-bottom:5px;
+	vertical-align:middle;
+	box-sizing:border-box;
+	position:relative;
+}
+/*2.商品筛选*/
+div .choose{
+	width:948px;
+	min-height:280px;
+	font-size:14px;
+	color:#555555;
+	border:1px solid #ddd;
+}
+div .choose p{
+	margin:none;
+	padding:5px;
+	border-bottom:1px dotted #ddd;
+}
+div .choose h3{
+	width:100%;
+	height:40px;
+	line-height:40px;
+	background:linear-gradient(to bottom,#fff,#EEEEEE);
+	font-weight:normal;
+	padding-left:10px;
+	box-sizing:border-box;
+}
+div .choose a{
+	color:#005AA0;
+}
+div .choose input{
+	width:40px;
+	height:20px;
+	border:1px solid #ddd;
+}
+/*3.排序方式*/
+div .sort_style p{
+	width:950px;
+	line-height:30px;
+	border:1px solid #ddd;
+	background:linear-gradient(to bottom,#fff,#EEEEEE);
+	color:#555555;
+	box-sizing:border-box;
+}
+div .sort_style> a{
+	color:#404040;
+}
+/*4.商品模块*/
+div.product{
+	width:950px;
+	min-height:200px;
+	/*border:1px solid purple;*/
+}
+div .product  p{
+	/*border:1px solid blue;*/
+	min-width:224px;
+	min-height:200px;
+	display:inline-block;
+	text-align:center;
+	padding:5px;
+	box-sizing:border-box;
+}
+div .product p img{
+	width:200px;
+	height:200px;
+	transition: all 0.6s linear; 
+}
+div .product p img:hover {
+	transform: scale(1.08);
+	box-shadow: 10px 5px 5px 5px block ;
+	border:1px solid block;
+
+}
+/*5.分页*/
+div .limit .p{
+	font-size:14px;
+	margin-left:200px;
+	padding:20px;
+}
+div .limit>p a{
+	display:inline-block;
+	text-align:center;
+	min-width:30px;
+	line-height:30px;
+	border:1px solid #ddd;
+
+}
+/*6.咨询客服和返回顶部等服务帮助*/
+div .r_side{
+	width:50px;
+	height:150px;
+	position:fixed;
+	right:15px;
+	top:400px;
+
+}
+div .r_side li{
+	display:block;
+	width:60px;
+	height:60px;
+	text-align:bottom;
+	text-align:center;
+	color:#4C4C4C;
+	font-size:12px;
+	padding:2px;
+	/*border:1px solid purple;*/
+}
+div .r_side li:hover{
+	background:#ddd;
+	color:#FFFFFF;
+	
+}
+div .r_side img{
+	width:35px;
+	height:35px;
+	text-align:bottom;
+
+}

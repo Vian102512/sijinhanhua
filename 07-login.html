@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title> 登录页面 </title>
+	<link rel="stylesheet" href="css/common.css">
+	<style>
+	*{box-sizing:border-box;}
+/*最外层div*/
+		#land{
+			width:1250px;
+			margin:auto;
+		}
+/*		logo字体*/
+		#land>.first>h3{
+			line-height:1em;
+			font-weight: 400;
+			font-size:20px;
+			color:#535353;
+			display:inline-block;
+			
+		}	
+		.first{
+			padding:10px;
+		}
+/*		欢迎注册字体*/
+		#land>.first>h4{
+			line-height:1em;
+			font-weight: 400;
+			color:#535353;
+			display:inline-block;
+			padding-left:10px;
+			margin-bottom:10px;
+		}	
+/*		logo图像*/
+		#land>.first>h3>img{
+			width:70px;
+			height:60px;
+			text-align:center;
+			margin-left:30px;
+			margin-bottom:30px;
+			vertical-align: middle;
+		}
+/*		表单外的div*/
+		#land>.second{
+			width:1250px;
+			height:550px;
+			background:url("img/bg/log_bg.jpg");
+			margin:auto;
+			background-size:cover;
+			position:relative;
+
+
+		}
+/*		登录的表单*/
+		#land>.second>form{
+		/* background:rgba(139,139,139,0.5); */
+		background:#fff;
+    width: 250px;
+    height: 300px;
+    position: absolute;
+    top: 100px;
+    right: 180px;
+    font-size: 12px;
+    box-sizing: border-box;
+    padding: 15px;
+			
+
+		}
+/*		表单下的所有div*/
+	#land>.second>form>div{
+		margin-top:10px;
+	}
+
+/*		input中登录和注册--字体*/
+		a[class=land_font]{
+			font-size:16px;
+		}
+		a[class=land_font]:hover{
+			color:#151918;
+		}
+
+/*		手机验证码登录*/
+		.space{
+			padding:3px 0 3px 85px ;
+		}
+/*		用户名和密码的input*/
+	input[type=text],input[type=password],input[type=submit]{
+		width:200px;
+		height:35px;
+		border-radius:2px;
+		border:1px solid #aaa;
+		padding-left:15px;
+		outline:none;
+	}
+/*	div内边距*/
+	div.remember{
+		padding:3px;
+	}
+/*	页脚*/
+	.third{
+		height:200px;
+		text-align:center;
+		padding-top:55px;
+	}
+	.third>a{
+		margin-right:20px;
+		line-height:30px;
+	}
+	.third>span{
+		color:#535353;
+	}
+	.box img{
+/*		opacity:0.6;*/
+		width:1000px;
+		height:500px;
+	}
+	</style>
+ </head>
+
+
+
+ <body>
+<div id="land">  
+	<div class="first">
+		<h3>似锦</h3><h4> 欢迎登录</h4><br>
+	</div>
+	<div class="second">
+		<form action="#">
+			<div class="font">
+				<a href="#" class="land_font"  >登录</a> <hr>
+			</div>
+			<div class="space">
+				<a href="#" >使用手机验证码登录?</a>
+			</div>
+			<div > 
+				<input type="text" placeholder="Email地址/手机号" >		
+			</div>
+			<div>
+				<input type="password" placeholder="用户密码">
+			</div>	
+			<div class="remember">
+				<input type="checkbox">记住密码
+				<a href="#" class="space1">忘记密码？</a>
+			</div>
+			<div>
+				<input type="submit" value="登录"> 
+			</div>
+			<div class="remember">
+				<a href="#">微信</a> | <a href="#">QQ</a> <a href="06_Register.html">立即注册</a>
+			</div>
+		</form>
+	</div>
+<!-- footer -->
+	<div class="third">
+			<a href="#">关于似锦</a>|
+			<a href="#">联系我们</a>|
+			<a href="#">商务合作</a>|
+			<a href="#">友情链接</a>|
+			<a href="#">销售联盟</a>|
+			<a href="#">似锦社区</a>|
+			<a href="#">似锦社区</a>|
+			<a href="#">似锦社区</a>|
+			<a href="#">似锦社区</a>|
+			<a href="#">似锦社区</a>
+			<a href="#"></a><br>
+			<span>Copyright&copy;2004-2017 似锦.com版权所有 </span>
+	</div>
+</div>
+ </body>
+</html>

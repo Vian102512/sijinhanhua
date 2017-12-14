@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>  </title>
+<link rel="stylesheet" href="css/common.css">
+<style>
+	#register{
+		width:1250px;
+		margin:auto;
+		height:960px;
+	}
+	#register>.register_head{
+		width:1000px;
+		padding-top:10px;
+		height:80px;
+/*		background:#fff;*/
+		margin:auto;
+		vertical-align:middle;
+		border-bottom:3px solid #FF60AF;
+	}
+	#register>.register_head img{
+		width:60px;
+		height:55px;
+		margin-left:30px;
+	}
+	/*		logo字体*/
+	#register>.register_head>h3{
+			line-height:1em;
+			font-weight: 400;
+			color:#535353;
+			display:inline-block;
+	}	
+	
+/*	欢迎注册字体*/
+	#register>.register_head>h2{
+			font-weight: 400;
+			color:#535353;
+			display:inline-block;
+			padding-left:10px;
+		}	
+
+	#register .register_box{
+	margin-top:100px;
+		width:980px;
+		height:510px;
+		margin:auto;
+		background:#F5F5F5;
+		box-shadow:-10px 10px  2px #EBEEEF;
+		position:relative;
+		margin-top:50px;
+	} 
+/*	页面背景*/
+	body{
+		background:#F5F5F5;
+	}
+/*	表单*/
+	#register form{
+		width:990px;
+		height:520px;
+		position:absolute;
+		background:#fff;
+		top:-10px;
+	}
+/*	input外层大的div*/
+	#register .register_form{
+		position:absolute;
+		width:500px;
+		height:350px;
+		top:75px;
+		right:230px;
+		padding:10px;
+	}
+/*	输入框外div*/
+	.register_form>div{
+		border-bottom:1px solid #F2F2F2;
+		width:100%;
+		height:60px;
+		box-sizing:border-box;
+	}
+/*	输入框*/
+	input{
+		width:400px;
+		height:100%;
+    font-size: 14px;
+    border:none;
+    outline: none;
+		margin-left:50px;
+		vertical-align:middle;
+
+	}
+/*	注册按钮*/
+	button{
+		width:400px;
+		height:45px;
+		margin-left:50px;
+		border:none;
+		background:#FE5478;
+		border-radius:5px;
+	}
+/*	input 图片*/
+	img{
+		width:25px;
+		height:25px;
+		vertical-align:middle;
+	}
+/*	已有账号请登录*/
+	.register_form>h6{
+		font-weight:400;
+		padding:10px 0 10px 320px;
+	}
+	/*	页脚*/
+	.third{
+		height:200px;
+		text-align:center;
+		padding-top:55px;
+	}
+	.third>a{
+		margin-right:20px;
+		line-height:30px;
+	}
+	.third>span{
+		color:#535353;
+	}
+</style>	
+ </head>
+ <body>
+ <div id="register">
+	<div class="register_head">
+		<h3><img src="img/logo.png">似锦</h3><h2>欢迎注册</h2>
+	</div>
+	<div class="register_box">
+		<form action="#">
+			<div class="register_form">
+				<div><img src="pic/account.png"><input type="text" placeholder="用户名"></div>
+				<div><img src="pic/paasword.png"><input type="password" placeholder="用户密码"></div>
+				<div><img src="pic/paasword.png"><input type="password" placeholder="再次输入密码"></div>
+				<div><img src="pic/veri.png"><input type="text" placeholder="验证码"></div>	
+				<h6><a href="07-login.html">已有账号？请登录</a></h6>
+				<button type="submit"> 注册</button>
+				
+			</div>
+		</form>	
+	</div>
+ <div class="third">
+			<a href="#">关于似锦</a>|
+			<a href="#">联系我们</a>|
+			<a href="#">商务合作</a>|
+			<a href="#">友情链接</a>|
+			<a href="#">销售联盟</a>|
+			<a href="#">似锦社区</a>|
+			<a href="#">似锦社区</a>|
+			<a href="#">似锦社区</a>|
+			<a href="#">似锦社区</a>|
+			<a href="#">似锦社区</a>
+			<a href="#"></a><br>
+			<span>Copyright&copy;2004-2017 似锦.com版权所有 </span>
+	</div>
+ </div>
+ </body>
+</html>

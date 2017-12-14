@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>  </title>
+	<script src="jquery.js"></script>
+	<style>
+.new_products2{
+    width:1250px;
+    height:37px;
+    border-bottom:1px solid #ddd;
+    margin:auto;
+    padding-left: 150px;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.tabs2 a{
+    width:100px;
+    height: 35px;
+    padding:8px 12px;
+    display:inline-block;
+    font-size: 14px;
+    border-bottom:#fff;
+    text-align: center;
+   
+}
+.tabs2 a:hover{
+    background: #F7CBFA;
+}
+.tabs2>li{
+    float:left;
+}
+.tabs2>.active2{
+    border:1px solid #ddd;
+    border-bottom:#fff;
+}
+	</style>
+ </head>
+ <body>
+<!--楼层标题-->
+<div class="new_products2">
+	<ul class="tabs2">
+		<li class="active2"><a data-toggle="tab2"  data-trigger="f4"  class="title_a4">当季热销</a></li>
+		<li><a data-toggle="tab2"  data-trigger="f5" class="title_a5">高端精品</a></li>
+		<li><a data-toggle="tab2"  data-trigger="f6"  class="title_a6">人气单品</a></li>
+	</ul>
+</div>
+<!--商品-->
+</div>
+<!--##################《 f 4 》#############-->
+<div  id="f4" style="border:2px solid #000; height:560px; width:1250px;  margin:auto;">
+		
+</div>
+<!--##################《 f 5 》#############-->
+<div id="f5" style="border:2px solid red; height:560px;  width:1250px; margin:auto; display:none;">
+
+</div>
+<!--##################《 f 6 》#############-->
+<div id="f6" style="border:2px solid purple; height:560px;  width:1250px; margin:auto; display:none;">
+
+</div>	
+<script>
+	var hover_a2 = $("[data-toggle=tab2]");
+	hover_a2.hover(e=>{
+  var $li2=$(e.target).parent();
+  if(!$li2.hasClass("active2"))
+    $li2.addClass("active2").siblings(".active2").removeClass("active2");
+});
+
+var a4 = $(".title_a4");
+var a5 = $(".title_a5");
+var a6 = $(".title_a6");
+var f4 = $("#f4");
+var f5 = $("#f5");
+var f6 = $("#f6");
+
+$(".new_products a")
+
+a4.hover(function(){
+	f4.css("display","block");
+	f5.css("display","none");
+	f6.css("display","none");
+});
+
+a5.hover(function(){
+	f5.css("display","block");
+	f4.css("display","none");
+	f6.css("display","none");
+});
+
+a6.hover(function(){
+	f6.css("display","block");
+	f4.css("display","none");
+	f5.css("display","none");
+});
+</script>
+ </body>
+</html>

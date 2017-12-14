@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>商品列表页 </title>
+	<link rel="stylesheet" href="css/products.css">	
+	<link rel="stylesheet" href="css/common.css">
+	<script src="js/other/jquery.js"></script>
+	<script src="js/products.js"></script>
+	<script src="js/product_sort.js"></script>
+ </head>
+ <body class="main">
+ <header></header>
+ <script>
+ </script>
+  <div id="products" >
+	<p class="top">
+	<a href="01-index.html">首页></a>
+	<a href="04-products.html">商品推荐</a>
+ </p>
+<!--1 左侧div：热销单品推荐 -->
+		<div class="hot">
+			<p>热销单品</p>
+			<ul>
+			<li>
+				<a href=""><img src="img/friends/161.jpg" ></a><p>粉色玫瑰<br> ￥169</p>
+			</li><li>
+				<a href=""><img src="img/friends/162.jpg" ></a><p>粉色玫瑰<br> ￥169</p>
+			</li><li>
+				<a href=""><img src="img/friends/163.jpg" ></a><p>粉色玫瑰<br> ￥169</p>
+			</li><li>
+				<a href=""><img src="img/friends/164.jpg" ></a><p>粉色玫瑰<br> ￥169</p>
+			</li><li>
+				<a href=""><img src="img/friends/165.jpg" ></a><p>粉色玫瑰<br> ￥169</p>
+			</li><li>
+				<a href=""><img src="img/friends/166.jpg" ></a><p>粉色玫瑰<br> ￥169</p>
+			</li>
+			</ul>
+		</div>
+ <div id="right">
+ <div class="article">
+	
+ </div>
+<!--2 上边div：商品筛选 -->
+		<div class="choose">
+			<h3>商品筛选</h3>
+			<p>
+				用途：
+        <a href="#">爱情鲜花</a>
+				<a href="#">生日鲜花</a>
+				<a href="#">商务用花</a>
+				<a href="#">友情鲜花</a>
+				<a href="#">老师长辈</a>
+				<a href="#">求婚婚庆</a>
+				<a href="#">道歉鲜花</a>
+				<a href="#">探病慰问</a>
+				<a href="#">祝福庆贺</a>
+				<a href="#">祭奠</a></p>
+			<p>花材：
+				<a href="#">玫瑰</a>
+				<a href="#">百合</a>
+				<a href="#">向日葵</a>
+				<a href="#">康乃馨</a>
+				<a href="#">郁金香</a>
+				<a href="#">扶郎</a>
+				<a href="#">马蹄莲</a>
+				<a href="#">满天星</a>
+				<a href="#">百合+玫瑰</a>
+				<a href="#">玫瑰+康乃馨</a>
+				<a href="#">永生花</a>
+				<a href="#">皂花</a>
+				<a href="#">草莓花束</a></p>
+			<p>价格：
+				<a href="#">100-200元</a>
+				<a href="#">200-300元</a>
+				<a href="#">300-500元</a>
+				<a href="#">500-800元</a>
+				<a href="#">800元以上</a>&nbsp;
+				自定义价格&nbsp;
+				<input type="text">- <input type="text">元</p>
+			<p>对象：
+				<a href="#">恋人</a>
+				<a href="#">朋友</a>
+				<a href="#">父母</a>
+				<a href="#">领导</a>
+				<a href="#">老师</a>
+				<a href="#">客户</a>
+				<a href="#">长辈</a>
+				<a href="#">病人</a></p>
+			<p>节日：
+				<a href="#">七夕节</a>
+				<a href="#">情人节</a>
+				<a href="#">妇女节</a>
+				<a href="#">母亲节</a>
+				<a href="#">光棍节</a>
+				<a href="#">圣诞节</a>
+				<a href="#">中秋节</a>
+				<a href="#">感恩节</a>
+				<a href="#">父亲节</a>
+				<a href="#">教师节</a></p>
+			<p>支数：
+				<a href="#">9枝</a>
+				<a href="#">11枝</a>
+				<a href="#">12枝</a>
+				<a href="#">13枝</a>
+				<a href="#">16枝</a>
+				<a href="#">19枝</a>
+				<a href="#">21枝</a>
+				<a href="#">29枝</a>
+				<a href="#">33枝</a>
+				<a href="#">36枝</a>
+				<a href="#">99枝</a>
+				<a href="#">99以上</a></p>
+			<p>类型：
+				<a href="#">手捧花</a>
+				<a href="#">礼盒花</a>
+				<a href="#">发财树</a>
+				<a href="#">花篮</a>
+				<a href="#">巧克力花束</a>
+				<a href="#">桌花</a>
+				<a href="#">卡通花束</a>
+				<a href="#">礼品熊</a>
+				<a href="#">组合鲜花</a>
+				<a href="#">韩式鲜花</a>
+				<a href="#">果篮</a></p>
+			<p>颜色：
+				<a href="#">红色</a>
+				<a href="#">粉色</a>
+				<a href="#">紫色</a>
+				<a href="#">黄色</a>
+				<a href="#">白色</a>
+				<a href="#">蓝色</a>
+				<a href="#">香槟色</a>
+				<a href="#">七彩</a>
+				<a href="#">混色</a></p></div><br>
+<!--3 排序方式	 -->
+		<div class="sort_style">
+
+			<p>排序方式：
+					<a href="#">默认</a>
+					<a href="#">销量↓</a>
+					<a href="#">人气↓</a>
+					<a href="#">价格↓</a>
+			</p>
+		</div>
+<!--4 中间div：商品模块	 -->
+		<div class="product">
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/1.jpg"></a><br>
+				<a href="#">鲜花·母爱</a><br>￥169.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="#"><img src="img/flowers/2.jpg"></a><br>
+				<a href="#">鲜花·纯洁</a><br>￥219.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="05-product-details.html" ><img src="img/flowers/3.jpg"></a><br>
+				<a href="#">鲜花·典雅</a><br>￥319.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/4.jpg"></a><br>
+				<a href="#">鲜花·芬芳</a><br>￥269.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/5.jpg"></a><br>
+				<a href="#">鲜花·母爱</a><br>￥169.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/6.jpg"></a><br>
+				<a href="#">鲜花·母爱</a><br>￥169.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/7.jpg"></a><br>
+				<a href="#">鲜花·纯洁</a><br>￥219.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="05-product-details.html" ><img src="img/flowers/8.jpg"></a><br>
+				<a href="#">鲜花·典雅</a><br>￥319.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/9.jpg"></a><br>
+				<a href="#">鲜花·芬芳</a><br>￥269.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/10.jpg"></a><br>
+				<a href="#">鲜花·母爱</a><br>￥169.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/11.jpg"></a><br>
+				<a href="#">鲜花·纯洁</a><br>￥219.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="05-product-details.html" ><img src="img/flowers/12.jpg"></a><br>
+				<a href="#">鲜花·典雅</a><br>￥319.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/13.jpg"></a><br>
+				<a href="#">鲜花·母爱</a><br>￥169.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/14.jpg"></a><br>
+				<a href="#">鲜花·纯洁</a><br>￥219.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="05-product-details.html" ><img src="img/flowers/15.jpg"></a><br>
+				<a href="#">鲜花·典雅</a><br>￥319.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/16.jpg"></a><br>
+				<a href="#">鲜花·芬芳</a><br>￥269.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/17.jpg"></a><br>
+				<a href="#">鲜花·母爱</a><br>￥169.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/18.jpg"></a><br>
+				<a href="#">鲜花·母爱</a><br>￥169.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/19.jpg"></a><br>
+				<a href="#">鲜花·纯洁</a><br>￥219.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="05-product-details.html" ><img src="img/flowers/20.jpg"></a><br>
+				<a href="#">鲜花·典雅</a><br>￥319.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/21.jpg"></a><br>
+				<a href="#">鲜花·芬芳</a><br>￥269.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/22.jpg"></a><br>
+				<a href="#">鲜花·母爱</a><br>￥169.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="05-product-details.html"><img src="img/flowers/23.jpg"></a><br>
+				<a href="#">鲜花·纯洁</a><br>￥219.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+			<p>
+				<a href="05-product-details.html" ><img src="img/flowers/24.jpg"></a><br>
+				<a href="#">鲜花·典雅</a><br>￥319.00<br>	
+				<a href="#" class="car">加入购物车</a>
+				<a href="#" class="car">立即购买</a>    </p>
+			
+		</div>
+<!--5 最下div：分页 -->
+		<div class="limit">
+			<p class="p">共1000条记录
+				<a href="#">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">7</a>
+				<a href="#">8</a>
+				<a href="#">9</a>
+				<a href="#">10</a>
+				<a href="#">下一页</a>
+				<a href="#">尾页</a>	
+			</p></div>
+ </div>
+
+	<footer></footer>
+	<script>
+		//加载footer
+	$(function(){
+		$.ajax({
+		type:"get",
+		url:"03-footer.html",
+		success:function(data){
+			$("footer").append(data);
+		},
+		error:function(){
+			console.log("错误");
+		}
+		});
+})
+	</script>
+ </body>
+</html>
